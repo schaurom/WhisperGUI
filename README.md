@@ -1,13 +1,31 @@
 
 ## Setup Whisper mit einem TKinter GUI
 
-    pip install git+https://github.com/openai/whisper.git 
+    pip install git+https://github.com/schaurom/WhisperGUI.git 
     pip install -r requirements.txt
 
+To update the package to the latest version of this repository, please run:
 
+    pip install --upgrade --no-deps --force-reinstall git+https://github.com/schaurom/WhisperGUI.git
 
+It also requires the command-line tool [`ffmpeg`](https://ffmpeg.org/) to be installed on your system, which is available from most package managers:
 
+```bash
+# on Ubuntu or Debian
+sudo apt update && sudo apt install ffmpeg
 
+# on Arch Linux
+sudo pacman -S ffmpeg
+
+# on MacOS using Homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on Windows using Chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on Windows using Scoop (https://scoop.sh/)
+scoop install ffmpeg
+```
 
 
 # Whisper
