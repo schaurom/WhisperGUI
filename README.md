@@ -1,7 +1,7 @@
 
 ## Setup Whisper mit einem TKinter GUI
 
-    pip install git+https://github.com/schaurom/WhisperGUI.git 
+    git clone https://github.com/schaurom/WhisperGUI.git 
     pip install -r requirements.txt
 
 To update the package to the latest version of this repository, please run:
