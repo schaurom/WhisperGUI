@@ -1,3 +1,15 @@
+
+## Setup Whisper mit einem TKinter GUI
+
+    pip install git+https://github.com/openai/whisper.git 
+    pip install -r requirements.txt
+
+
+
+
+
+
+
 # Whisper
 
 [[Blog]](https://openai.com/blog/whisper)
