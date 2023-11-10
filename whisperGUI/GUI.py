@@ -20,6 +20,7 @@ def run_whisper(audio_file_path, output_file_path):
     #Inhalt in Variable schreiben
     result_text = result["text"]
     print("\n"+result_text)
+    #word_details = result["words"]
 
     # Word
     dateiname = output_file_path
@@ -32,6 +33,20 @@ def run_whisper(audio_file_path, output_file_path):
     lauf = absatz.add_run(result_text)
     lauf.font.size = Pt(14)  # Ändern Sie die Schriftgröße auf 14 Pt
 
+    #for word_detail in word_details:
+    #    word_text = word_detail["word"]
+    #    word_accuracy = word_detail["accuracy"]
+
+    #    # Fügen Sie den Text in das Dokument ein und spezifizieren Sie die Schriftgröße und Farbe basierend auf der Genauigkeit
+    #    absatz.add_run(word_text).font.size = Pt(14)
+    #    if word_accuracy > 0.8:
+    #        absatz.runs[-1].font.color.rgb = (0, 128, 0)  # Dunkelgrün für hohe Genauigkeit
+    #    elif word_accuracy > 0.6:
+    #        absatz.runs[-1].font.color.rgb = (255, 165, 0)  # Orange für moderate Genauigkeit
+    #    else:
+    #        absatz.runs[-1].font.color.rgb = (255, 0, 0)  # Rot für niedrige Genauigkeit
+
+    
     # Speichern Sie das Dokument in einer Datei
     dokument.save(dateiname)
     print("\n"+dateiname)
