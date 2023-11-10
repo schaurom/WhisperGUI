@@ -13,7 +13,7 @@ def run_whisper(audio_file_path, output_file_path):
 
     print("\n"+audio_file_path)
     # models: tiny base small medium large-v1 large-v2
-    model = whisper.load_model("tiny", download_root='.\models')
+    model = whisper.load_model("large-v2", download_root='.\models')
     options = {"language": "de", "verbose": "true", "word_timestamps": "true", "append_punctuations": "."}
     result = model.transcribe(audio_file_path, **options)
 
