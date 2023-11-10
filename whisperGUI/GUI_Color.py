@@ -43,6 +43,7 @@ def run_whisper(audio_file_path, output_file_path):
 
     # Klossar einfügen
     absatz.add_run(f'Open AI Sprachmodell: {model}\n\n').font.size = Pt(12)
+    absatz.add_run(f'Audio-Datei: {audio_file_path}\n\n').font.size = Pt(10)
     absatz.add_run(f'Dunkelgrün für hohe Genauigkeit - > {THRESHOLD_GREEN * 100:.0f}%').font.size = Pt(12)
     absatz.runs[-1].font.color.rgb = GREEN
 
