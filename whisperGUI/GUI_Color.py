@@ -12,8 +12,8 @@ def run_whisper(audio_file_path, output_file_path):
     startzeit = time.time()
 
     print("\n"+audio_file_path)
-    # models: tiny base small medium large-v1 large-v2
-    model = "large-v2"
+    # models: tiny base small medium large-v1 large-v2 large-v3
+    model = "large-v3"
     # model = "tiny"
     print("\n Modell: "+model)
     load_model = whisper.load_model(model, download_root='.\models')
